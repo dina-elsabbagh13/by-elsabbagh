@@ -1,0 +1,354 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    transition: all 0s linear;
+}
+
+body{
+  background: linear-gradient(#000000,#113f57);
+  width:100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-Y: hidden;
+  color: white;
+
+
+}
+#myNavbar7 ul li {
+  margin: 0 20px;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#myNavbar7 ul li a {
+color: rgb(255, 238, 86);
+text-decoration: none;
+font-size: 16px;
+font-weight: 700;
+}
+#myNavbar7 ul li a:hover{
+  color: #fff;
+  
+}
+
+#myNavbar7 .dropdown-item:hover{
+color: #ad2c15;
+
+}
+  
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: right;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.cols{
+  width: 100%;
+}
+.topline{
+  display: block;
+  position: relative;
+  font-size: 25px;
+
+  margin: 7px;
+}
+
+h1{
+  display: block;
+  font-size: 7em;
+  font-weight: 900;
+  color: #fff;
+}
+.multitext{
+  font-size: 50px;
+  color: #ffffff;
+}
+p{
+  display: block;
+  width: 90%;
+  font-size: 25px;
+  font-weight: 500;
+ color: rgb(255, 238, 86);
+}
+
+
+.player {
+    width: 600px;
+    height: 50px;
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-gap: 16px;
+    padding: 0px 24px;
+    position: relative;
+    border-radius: 64px;
+}
+
+.control,#current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 16px;
+}
+
+#playbtn {
+    font-size: 24px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 700;
+    color:  #ffffff;
+}
+
+#current {
+    text-align: right;
+}
+
+.bar {
+    --space: -4px;
+    background-color: #205c644f;
+    overflow: hidden;
+    left: var(--space);
+    right: var(--space);
+    top: var(--space);
+    bottom: var(--space);
+    position: absolute;
+    border-radius: 64px;
+    z-index: -2;
+}
+
+#progress {
+    display: blcok;
+    width: var(--progress,0%);
+    background-color: rgba(91, 255, 105, 0.726);
+    transition: all 1s linear;
+    height: 100%;
+}
+
+.imgbox{
+  position: relative;
+  height: 80%;
+  width: 100%;
+}
+
+.imgbox img{
+  position: relative;
+  height: 80%;
+  width: 100%;
+  top: 50px;
+
+  left:50px;
+  margin-top: 10px;
+}
+
+#spacetoonf{
+  position: relative;
+  width: 100%;
+  height:90vh;
+  left:0px;
+  right:40px;
+  animation: animateBg 4s linear infinite;
+} 
+@keyframes animateBg
+{
+  50%{
+      top: 0px;
+      right:100px;   }
+}
+
+#stars{
+  position: absolute;
+  height: 100%;
+  width: calc(110% - 60px);
+  right:0px;
+  right:50px;
+  animation: animateg 5s linear infinite;
+  z-index: -1;
+} 
+@keyframes animateg
+{
+  50%{
+      right:70px;   }
+}
+
+span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px !important;
+  height: 4px;
+  background: #ffe4e4;
+  border-radius: 60%;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1) ,
+  0 0 0 4px rgba(255, 255, 255, 0.1),
+  0 0 0 1px rgba(255, 255, 255, 1);
+  animation: animate 3s linear infinite;
+}
+span::before
+{
+  content: '';
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 50%;
+  width: 300px !important;
+  height: 1px;
+  background: linear-gradient(90deg,#fff,transparent);
+}
+@keyframes animate{
+  0%{
+      transform: rotate(315deg) translateX(0);
+      opacity: 1;
+    }
+   70%{
+        opacity: 1;
+       }
+                  
+  100%{
+      transform: rotate(315deg) translateX(-1000px);
+      opacity: 0;
+          }
+}
+span:nth-child(3){
+  top: 0;
+  right: 280px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 7.5s;
+  z-index: -1;
+}
+span:nth-child(4){
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  z-index: -1;
+
+}
+span:nth-child(5){
+  top: 300px;
+  right: 0px;
+  left: initial;
+  animation-delay: .2s;
+  animation-duration: 4.7s;
+  z-index: -1;
+
+}
+span:nth-child(6){
+  top: 100px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 3.25s;
+  z-index: -1;
+
+}
+span:nth-child(7){
+  top: 100px;
+  right:20px;
+  left: initial;
+  animation-delay: 5.75s;
+  animation-duration: 7.25s;
+  z-index: -1;
+
+}
+
+@media(min-width:750px) and (max-width:1000px ){
+  .wrapper .image img {
+      width: 400px;
+  
+  }
+  
+}
+@media (max-width:750px ){
+  .wrapper,nav{
+      flex-direction: column;
+  justify-content:center;
+  width: 100%;
+  display: block;
+  
+ }    
+ p{font-size: 15px}
+
+ .multitext{font-size: 25px;}
+ .wrapper{
+  position: absolute;
+ top: 120px;
+ text-align: left;
+ }
+
+}
+    /* Style the Sticky icons on web page */   
+    .stickyicon-list {   
+      position: fixed;   
+      top: 400px;   
+      transform: translateY(-50%);  
+      }         
+      .stickyicon-list a {   
+      display: block;   
+      text-align: center;   
+      padding: 8px;   
+      transition: all 0.5s ease;   
+      color: #ffffff;
+      font-size: 20px; 
+      border-radius: 50px;  
+    
+      }         
+      /* HOver affect on sticky social media icons */   
+      .stickyicon-list a:hover {   
+      color: #ffffff;   
+      width:10px;   
+      }   
+         
+      /* Now we have to design each icon of social media */         
+      .facebook {   
+      background:#113f57;
+      color: white;  
+      }         
+      .twitter {   
+      color: white;   
+      background: #277DA1;    
+      }   
+      .google {   
+      color: rgb(0, 255, 34);   
+      background: #FCBF49;
+      }   
+      .instagram {   
+      background:#ff87db;
+      color: white;   
+      }         
+      .youtube {   
+      color: white;   
+      background:#F82529;
+      }   
+  
