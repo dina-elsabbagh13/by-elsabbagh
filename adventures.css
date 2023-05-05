@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  transition: all 0s linear;
+}
+
+body{
+background: linear-gradient(#000000,#113f57);
+width:100%;
+height: 100vh;
+justify-content: center;
+align-items: center;
+overflow-x: hidden;
+color: white;
+}
+
+.logo{
+  z-index: 20000;
+  position: relative;
+}
+#myNavbar7 ul li {
+margin: 0 20px;
+z-index: 10;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 30px;
+font-weight: 500;
+}
+
+#myNavbar7 ul li a {
+color: rgb(255, 238, 86);
+text-decoration: none;
+font-size: 16px;
+font-weight: 700;
+}
+#myNavbar7 ul li a:hover{
+color: #fff;
+
+}
+
+#myNavbar7 .dropdown-item:hover{
+color: #ad2c15;
+
+}
+  
+
+section{
+  position: relative;
+width: 100%;
+height:100vh;
+padding: 100px;
+top :0px;
+left:0 ;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+section::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+height:100px;
+background: linear-gradient(to top,#230929,transparent);
+z-index: 1000;
+
+}
+
+section img{
+  position: absolute;
+  top :0px;
+left:0 ;
+width: 100% !important;
+height:100%;
+  object-fit: cover;
+
+}
+
+section img #mount-front{
+  z-index:10 ;
+
+}
+#vedio{
+ mix-blend-mode: screen;
+ position: absolute;
+ top: 100px ;
+width: 60%;
+z-index: 10;
+}
+
+#title{
+  position: absolute;
+  color: bisque;
+  font-size: 40px;
+  font-weight:700 ;
+  z-index:0 ;
+  top:380px;
+  right: -100px;
+}
+.sec{
+  position: relative;
+  padding:70px 0;
+  background: #230929;
+  width: 100%;
+  height: 100;
+}
+.heros{
+  text-align: center; font-weight: 800;
+   color:yellow;
+margin-top: 30px;font-size: 50px;
+z-index: 1000;}
+
+.card img{
+  height: 300px;
+}
+
+  /* Style the Sticky icons on web page */   
+  .stickyicon-list {   
+      position: fixed;   
+      top: 400px;   
+      transform: translateY(-50%);  
+      z-index: 1000;
+      }         
+      .stickyicon-list a {   
+      display: block;   
+      text-align: center;   
+      padding: 8px;   
+      transition: all 0.5s ease;   
+      color: #ffffff;
+      font-size: 20px; 
+      border-radius: 50px;  
+    
+      }         
+      /* HOver affect on sticky social media icons */   
+      .stickyicon-list a:hover {   
+      color: #ffffff;   
+      width:10px;   
+      }   
+         
+      /* Now we have to design each icon of social media */         
+      .facebook {   
+      background:#113f57;
+      color: white;  
+      }         
+      .twitter {   
+      color: white;   
+      background: #277DA1;    
+      }   
+      .google {   
+      color: rgb(0, 255, 34);   
+      background: #FCBF49;
+      }   
+      .instagram {   
+      background:#ff87db;
+      color: white;   
+      }         
+      .youtube {   
+      color: white;   
+      background:#F82529;
+      }   
+
